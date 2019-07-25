@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="grid-container">
+      <button *ngFor="let song of songs.songs; let i = index" (click)="show(i)">{{song.name}}</button>
+      <details *ngIf="currentSong">
+        <!-- public name: string;
+      public artist: string;
+      public genre: string;
+      public year: number;
+      public picture: any; -->
+      <p>Name: {{currentSong.name}}</p>
+      <p>Artist: {{currentSong.artist}}</p>
+      <p>Genre: {{currentSong.genre}}</p>
+      <p>Year: {{currentSong.year}}</p>
+      </details>
+      <picture *ngIf="currentSong">
+        <img src={{currentSong.picture}} height="10%" width="10%">
+      </picture>
+    </div>
+  </div>

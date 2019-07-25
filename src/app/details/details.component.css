@@ -1,0 +1,11 @@
+
+.wrapper{
+    margin-top: 2%;
+    grid-template-areas:    "button button button button"
+                            "details details picture picture";
+}
+
+.wrapper > button {
+    grid-area: button;
+    background-color: #8ca0ff;
+  }
